@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<title>FUNCTIONS</title>
+		<script>
+			function read()
+			{
+				s1=forms.name.value;
+				s2=forms.pwd.value;
+				len=s2.length;
+				if(s1=="" || s1==null)
+				{
+				alert("enter name");
+				}
+				if(s2.length<6)
+				{
+				alert("enter password ");
+				}
+				else
+				{
+					if(s2=="" || s2==null)
+					{
+						alert('enter password ra')
+					}
+					else
+					{
+					document.writeln("hi ");
+					document.writeln("this is sagar ");
+					}
+					//document.writeln("hi ");
+					//document.writeln("this is sagar ");
+				}
+				
+				//document.writeln("hello "+s1);
+				//document.writeln(s2);
+			}
+		</script>
+	</head>
+	<body>
+		<form name="forms" action="serveraddress">
+			NAME:<input type="text" name="name" value="cse"><br>
+			PASSWORD:<input type="password" name="pwd" value="123456"><br>
+			<input type="button" value="click here" onclick="read()">
+		</form>
+	<body>
+</html>
